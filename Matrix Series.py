@@ -3,10 +3,10 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 # Definir matrices de series, géneros, duración y estilo (animación o live action)
-series = np.array(["Los Simpson", "Padre de Familia", "Friends", "Rick y Morty", "The Big Bang Theory"])
-generos = np.array(["Animacion", "Animacion", "Comedia", "Animacion", "Comedia"])
-duracion = np.array(["Larga", "Larga", "Larga", "Corta", "Larga"])
-estilo = np.array(["Animacion", "Animacion", "Live Action", "Animacion", "Live Action"])
+series = np.array(["Los Simpson", "Padre de Familia", "Friends", "Rick y Morty", "The Big Bang Theory","Batman. La serie animada", "Bojack Horseman", "Breaking Bad", "Chernobyl", "Cowboy Bebop", "Expediente X", "Futurama", "Juego de Tronos", "Neon Genesis Evangelion", "The Office", "Lost", "South Park", "The Walking Dead", "Vikingos", "Caballero Luna", "The Boys", "Mr Robot", "Peaky Blinders"])
+generos = np.array(["Comedia", "Humor negro", "Comedia", "Ciencia ficcion", "Comedia", "Aventura", "Psicologia", "Drama", "Documental", "Aventura", "Misterio", "Ciencia ficcion", "Aventura", "Misterio", "Comedia", "Misterio", "Humor negro", "Drama", "Documental", "Psicologia", "Drama", "Psicologia", "Documental"])
+duracion = np.array(["Larga", "Larga", "Larga", "Corta", "Larga", "Corta", "Corta", "Larga", "Corta", "Corta", "Larga", "Corta", "Larga", "Corta", "Larga", "Corta", "Larga", "Larga", "Larga", "Corta", "Larga", "Corta", "Larga"])
+estilo = np.array(["Animacion", "Animacion", "Live action", "Animacion", "Live action", "Animacion", "Animacion", "Live action", "Live action", "Anime", "Live action", "Animacion", "Live action", "Anime", "Live action", "Live action", "Animacion", "Live action", "Live action", "Live action", "Live action", "Live action", "Live action"])
 
 # Solicitar al usuario el nombre de una serie
 serie_usuario = input("Ingrese el nombre de una serie: ")
@@ -40,9 +40,13 @@ if serie_usuario in series:
     G = nx.Graph()
     G.add_node(serie_usuario, color="blue")
 
+    # Bucle para agregar nodos y aristas al grafo
     for serie, porcentaje in zip(matriz_series, porcentaje_recomendacion):
-        G.add_node(serie, color="green" if porcentaje == 100 else "yellow")
-        G.add_edge(serie_usuario, serie, weight=porcentaje)
+    # Agregar nodos solo si el porcentaje de recomendación es mayor a 0
+        if porcentaje > 0:
+            G.add_node(serie, color="green" if porcentaje == 100 else "yellow")
+            G.add_edge(serie_usuario, serie, weight=porcentaje)
+
 
     # Visualizar el grafo
     pos = nx.spring_layout(G, k =5.5)
