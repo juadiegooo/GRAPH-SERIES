@@ -50,3 +50,16 @@ Después de instalar Python, puedes seguir las instrucciones anteriores para ins
 ```bash
 pip install numpy networkx matplotlib
 ```
+
+
+## Ejecutar Proyecto Python
+
+```
+python Matrix_Series.py
+```
+
+o
+
+```
+python3 Matrix_Series.py
+```
