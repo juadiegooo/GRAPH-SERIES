@@ -1,8 +1,13 @@
-Instrucciones para la Implementación en tu Proyecto
+#Instrucciones para la Implementación en tu Proyecto
+------------------
+
 Para ejecutar este código, necesitarás instalar las siguientes bibliotecas en tu entorno de Python si aún no las tienes instaladas:
 
-NumPy: Es una biblioteca para realizar operaciones matemáticas en arreglos numéricos. Puedes instalarlo utilizando el siguiente comando:
+## 1. NumPy 
+Es una biblioteca para realizar operaciones matemáticas en arreglos numéricos. Puedes instalarlo utilizando el siguiente comando:
+´´´bash
 pip install numpy
+´´´
 
 Explicación: NumPy se utiliza aquí para manipular y realizar operaciones con matrices, lo cual es fundamental para las comparaciones y cálculos en el código.
 
