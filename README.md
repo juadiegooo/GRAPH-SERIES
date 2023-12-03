@@ -1,4 +1,4 @@
-INSTRUCCIONES PARA LA IMPLEMENTACION EN TU PROYECTO 
+Instrucciones para la Implementación en tu Proyecto
 Para ejecutar este código, necesitarás instalar las siguientes bibliotecas en tu entorno de Python si aún no las tienes instaladas:
 
 NumPy: Es una biblioteca para realizar operaciones matemáticas en arreglos numéricos. Puedes instalarlo utilizando el siguiente comando:
@@ -28,30 +28,26 @@ pip es el sistema de gestión de paquetes para Python. Es una herramienta que fa
 Aquí hay algunas funciones clave de pip:
 
 Instalación: Permite instalar paquetes de Python desde el Python Package Index (PyPI), que es un repositorio de software para proyectos de Python.
-
 pip install nombre_del_paquete
+
 Desinstalación: Permite desinstalar paquetes previamente instalados.
-
 pip uninstall nombre_del_paquete
-Actualización: Permite actualizar paquetes a versiones más recientes.
 
+Actualización: Permite actualizar paquetes a versiones más recientes.
 pip install --upgrade nombre_del_paquete
+
 Si los comandos pip mencionados anteriormente no funcionan, aquí hay algunas cosas que podrías verificar o intentar:
 
 En caso de errores:
+
 Abre la terminal de Visual Studio Code.
-
 Asegúrate de que estás trabajando en el entorno virtual (si lo estás utilizando). Si no, puedes omitir este paso.
-
 Ejecuta el siguiente comando para instalar requests:
+
 pip install requests
-
 Si estás utilizando Python 3.x, puedes usar pip3 en lugar de pip.
-
 Espera a que se complete la instalación. Deberías ver un mensaje que confirma que requests se ha instalado correctamente.
-
 Una vez instalado requests, puedes ejecutar tu código nuevamente.
-
 Asegúrate de que los módulos necesarios estén instalados en tu entorno de Python antes de ejecutar tu código. En caso de que surjan más errores de módulos faltantes, puedes instalarlos siguiendo el mismo enfoque de usar pip.
 
 Recuerda que estas instrucciones asumen que estás utilizando Python y pip en un entorno compatible (por ejemplo, en un sistema basado en Unix o en Windows con el símbolo del sistema). Si estás utilizando un entorno diferente, es posible que necesites ajustar los comandos según sea necesario.
