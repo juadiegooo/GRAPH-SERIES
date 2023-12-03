@@ -2,7 +2,7 @@ import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# Definir matrices de series, géneros, duración y estilo (animación o live action)
+# Definir matrices de series, géneros, duración y estilo
 series = np.array(["Los Simpson", "Padre de Familia", "Friends", "Rick y Morty", "The Big Bang Theory","Batman. La serie animada", "Bojack Horseman", "Breaking Bad", "Chernobyl", "Cowboy Bebop", "Expediente X", "Futurama", "Juego de Tronos", "Neon Genesis Evangelion", "The Office", "Lost", "South Park", "The Walking Dead", "Vikingos", "Caballero Luna", "The Boys", "Mr Robot", "Peaky Blinders"])
 generos = np.array(["Comedia", "Humor negro", "Comedia", "Ciencia ficcion", "Comedia", "Aventura", "Psicologia", "Drama", "Documental", "Aventura", "Misterio", "Ciencia ficcion", "Aventura", "Misterio", "Comedia", "Misterio", "Humor negro", "Drama", "Documental", "Psicologia", "Drama", "Psicologia", "Documental"])
 duracion = np.array(["Larga", "Larga", "Larga", "Corta", "Larga", "Corta", "Corta", "Larga", "Corta", "Corta", "Larga", "Corta", "Larga", "Corta", "Larga", "Corta", "Larga", "Larga", "Larga", "Corta", "Larga", "Corta", "Larga"])
